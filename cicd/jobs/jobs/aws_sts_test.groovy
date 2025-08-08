@@ -2,7 +2,7 @@ pipelineJob("aws-sts-test") {
 	description("Test AWS STS with credentials from AWS Secrets Manager using awscli podTemplate")
 	keepDependencies(false)
 	definition {
-		cpsScm {
+		cps {
 """
     pipeline {
         agent {
